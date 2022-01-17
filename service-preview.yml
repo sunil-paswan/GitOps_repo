@@ -5,7 +5,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app: trivial-go-web-app  
+    app: impulse-music  
   ports:
       - nodePort: 32000
         protocol: TCP
