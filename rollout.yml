@@ -22,16 +22,16 @@ spec:
   revisionHistoryLimit: 2
   selector:
     matchLabels:
-      app: trivial-go-web-app
+      app: impulse-music
   template:
     metadata:
       labels:
-        app: trivial-go-web-app
+        app: impulse-music
     spec:
       containers:
       - name: webserver-simple
-        image: docker.io/kostiscodefresh/gitops-canary-app:v1.0
+        image: su6680/music:latest
         ports:
         - name: http
-          containerPort: 8080
+          containerPort: 3000
           protocol: TCP
