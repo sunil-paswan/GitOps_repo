@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rollout-bluegreen-active
+spec:
+  type: LoadBalancer
+  selector:
+    app: impulse-music
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
